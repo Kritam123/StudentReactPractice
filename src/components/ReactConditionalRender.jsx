@@ -3,6 +3,7 @@ import React from "react";
 const ReactConditionalRender = () => {
   return <Goal isGoal={false} />;
 };
+
 function Goal(props) {
   const isGoal = props.isGoal;
   if (isGoal) {
@@ -15,6 +16,6 @@ function MissedGoal() {
 }
 
 function MadeGoal({isGoal}) {
-  return <h1>{isGoal ?"Goal!" :"Missed!"}</h1>;
+  return <h1>{isGoal ? "Goal!" : "Missed!"}</h1>;
 }
 export default ReactConditionalRender;
